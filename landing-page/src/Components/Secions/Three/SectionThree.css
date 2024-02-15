@@ -1,0 +1,129 @@
+.bg-img {
+  background-image: url("https://media.istockphoto.com/id/515705193/photo/island-of-elba-chiessi.webp?s=2048x2048&w=is&k=20&c=P5KvvHQG7LrjofTskzIC16mwzdvBZ4sePvxuu8oeKkg=");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section3-content {
+  background-color: white;
+  width: 600px;
+  height: 470px;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sec3-title {
+  color: #364e81;
+  font-family: "Cookie", cursive;
+  font-size: 70px;
+}
+
+.title-custome {
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
+.line-sec3 {
+  height: 1px;
+  width: 50px;
+  background-color: #364e81;
+  position: relative;
+  top: -20px;
+  left: 190px;
+}
+
+.sec3-para {
+  color: #696969;
+  width: 400px;
+  text-align: center;
+}
+
+.sec3-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3-img-container span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.sec3-img-container span img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.sec3-img-container span p {
+  display: inline;
+  width: 120px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@keyframes section3Animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 450px) {
+  .sec3-title {
+    font-size: 50px;
+    text-align: center;
+  }
+  .line-sec3 {
+    width: 35px;
+  }
+
+  .title-custome {
+    font-size: 30px;
+  }
+  .sec3-para {
+    font-size: 15px;
+  }
+
+  .section3-content {
+    width: 400px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sec3-para {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .sec3-img-container span img {
+    width: 80px;
+  }
+
+  .sec3-img-container span p {
+    display: inline;
+    width: 100px;
+    font-size: 10px;
+  }
+  .section3-content {
+    width: 330px;
+    height: 400px;
+  }
+}

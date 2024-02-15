@@ -1,0 +1,32 @@
+.nav {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 85px;
+  position: fixed;
+  box-shadow: 1px 1px 10px gray;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  transition-duration: 0.3s;
+}
+
+
+
+.separator {
+  height: 59px;
+}

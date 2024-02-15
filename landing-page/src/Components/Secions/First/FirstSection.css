@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.first-section-container {
+  background-image: linear-gradient(to bottom, #2e5479, #5c6d89);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+
+.first-section-container img {
+  height: 90px;
+  width: 60px;
+  animation-name: imgAnimation;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.sub-title {
+  font-size: 13px;
+  font-family: "Pacifico", cursive;
+}
+.title,
+.btn-fst-sec,
+.price,
+.sub-title {
+  animation-name: sharedAnimation;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-fst-sec {
+  background-color: #e47863;
+  border: 1px solid white;
+  font-size: 15px;
+  padding: 13px 50px;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-fst-sec:hover {
+  background-color: #e47863a2;
+}
+.fst-container {
+  padding: 10px 100px;
+}
+
+.separator2 {
+  height: 20px;
+}
+
+@keyframes imgAnimation {
+  0% {
+    transform: translateX(-400%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes sharedAnimation {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
